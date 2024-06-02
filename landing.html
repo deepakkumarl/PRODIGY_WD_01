@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f0f8ff;
+        }
+        #nav{
+            display: grid;
+            justify-content: center;
+            display: flex;
+            column-gap: 30px;
+            position: relative;
+            bottom: 40px;
+        }
+        #nav a{
+            text-decoration: none;
+        }
+
+        #ccc:hover{
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+
+        #nav a:hover{
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+        #cart button{
+            position: absolute;
+            right: 10px;
+            top: 8px;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+
+        #product{
+            background-color: gray;
+            border-radius: 220px;
+            width: 350px;
+            height: 350px;
+            
+            
+        }
+        #product img{
+            position: relative;
+            left:170px;
+            top:170px
+        }
+
+       
+        #content2{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+         
+            position: relative;
+            top: 100px;
+
+        }
+        #about{
+            width: 200px;
+            position: relative;
+            right: 150px;
+        }
+        #men img{
+            width: 150px;
+            height: 200px;
+            
+        }
+
+        #men{
+           display: grid;
+            align-content: center;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap:10px 10px;
+            position: absolute;
+            top:700px;
+            left: 170px;
+        }
+
+        #men img{
+            flex-basis: 30%;
+        }
+
+        #women{
+           display: grid;
+            align-content: center;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap:10px 10px;
+            position: absolute;
+            top:1400px;
+            left: 170px;
+        }
+
+        #women img{
+            flex-basis: 30%;
+        }
+
+        #women img{
+            width: 150px;
+            height: 200px;
+            
+        }
+
+        #kids{
+           display: grid;
+            align-content: center;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap:10px 10px;
+            position: absolute;
+            top:2100px;
+            left: 170px;
+        }
+
+        #kids img{
+            flex-basis: 30%;
+        }
+
+        #kids img{
+            width: 150px;
+            height: 200px;
+            
+        }
+
+        #customize{
+            position: absolute;
+            top:2700px;
+            left: 170px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        #customize img{
+            width: 250px;
+            height: 300px;
+            position: absolute;
+            left:700px
+        }
+        #contact{
+            position: absolute;
+            top: 3200px;
+            left: 170px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact input {
+            width: 900px; 
+            height: 40px; 
+            margin-bottom: 30px;
+        }
+
+        #navv button{
+            width: 100px;
+            height: 50px;
+            
+        }
+
+        #navv{
+            display: flex;
+            position: relative;
+            top: 40px;
+            left: 50px;
+            justify-content: space-around;
+
+
+        }
+
+    
+        #con{
+            position: absolute;
+            top: 100px;
+            background-color: black;
+            width: 300px;
+            color: white;
+            left:960px;
+            display: none;
+            border-radius: 50px;
+            overflow: auto;
+            max-height: 300px;
+          
+        }
+
+        #con::-webkit-scrollbar{
+            background: transparent;
+        }
+        #con h1{
+            text-align: center;
+        }
+
+        .chico{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        #dd{
+            position: relative;
+            left: 160px;
+            bottom: 40px;
+        }
+        #nnn{
+            background: transparent;
+            border: none;
+            outline: none;
+            position: relative;
+            bottom: 8px;
+        }
+
+        #n2{
+            background-color: black;
+            width: 180px;
+            height: 400px;
+            position: absolute;
+            top:30px;
+            left: -3px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            display: none;
+           
+
+        }
+
+        #n2 h2{
+            text-align: center;
+        }
+
+        #n2 a{
+            text-decoration: none;
+            color: white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h3 id="brandname">
+        <button id="nnn">NIKE</button>
+    </h3>
+
+    <div id="nav">
+        <a href="#men">Men</a>
+        <a href="#women"> Women</a>
+        <a href="#kids">Kids</a>
+        <a href="#customize">Customize</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <h3 id="cart">
+        <button id="ccc">CART</button>
+
+    </h3>
+    <div id="content2">
+
+    <div id="product">
+        <img src="nike.png" alt="img"></img>
+
+    </div>
+    <div id="about">
+        <h1>ABOUT US</h1>
+        <h4>The Nike About Us section encapsulates the brand's ethos of innovation and athletic excellence. It portrays Nike's global impact in sports, emphasizing its commitment to inspiring athletes through cutting-edge design, sustainable practices, and community involvement..</h4>
+    </div>
+    </div>
+    
+    <div id="men">
+       
+        
+        <img src="https://source.unsplash.com/random?shoe">
+        <img src="https://source.unsplash.com/random?shoe?1">
+        <img src="https://source.unsplash.com/random?shoe?2">
+        <img src="https://source.unsplash.com/random?shoe?6">
+        <img src="https://source.unsplash.com/random?shoe?3">
+        <img src="https://source.unsplash.com/random?shoe?4">
+        
+
+    </div>
+
+    <div id="women">
+        
+        <img src="https://source.unsplash.com/random?shoe!7">
+        <img src="https://source.unsplash.com/random?shoe?5">
+        <img src="https://source.unsplash.com/random?shoe?8">
+        <img src="https://source.unsplash.com/random?shoe?9">
+        <img src="https://source.unsplash.com/random?shoe?10">
+        <img src="https://source.unsplash.com/random?shoe?11">
+        
+
+    </div>
+
+    <div id="kids">
+        
+        <img src="https://source.unsplash.com/random?shoe!12">
+        <img src="https://source.unsplash.com/random?shoe?13">
+        <img src="https://source.unsplash.com/random?shoe?14">
+        <img src="https://source.unsplash.com/random?shoe?15">
+        <img src="https://source.unsplash.com/random?shoe?16">
+        <img src="https://source.unsplash.com/random?shoe?17">
+        
+
+    </div>
+
+    <div id="customize">
+        <div>
+        <h1>YEA!!!</h1>
+        <h2>We will also</h2><br><h1>Customize</h1><br><h2>Shoes As you like</h2>
+        </div>
+
+        <div>
+            <img src="https://source.unsplash.com/random?shoe?18">
+
+        </div>
+
+
+    </div>
+
+    <div id="contact">
+        <input id="yourname" type="text" placeholder="Enter your name">
+        <input id= "name" type ="text" placeholder="Enter Your Shoes name">
+        <input id="color" type="text" placeholder="Enter your Shoes Colour">
+        <input id="loc" type = text placeholder="Enter Your Location">
+        <div id="navv">
+        <button id="ac">Add to Cart</button>
+        <button  id="kj">Purchase</button>
+        </div>
+    </div>
+
+    <div id="con">
+        <h1>Your Cart</h1>
+         
+    </div>
+
+    <div id="n2">
+        <h2>Sidenav</h2>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Customize</a>
+        <a href="#">Contact</a>
+
+
+    </div>
+     
+
+    <script>
+        let carting = document.getElementById("ac");
+        let a = document.getElementById("name");
+        let b = document.getElementById("con");
+        let c = document.getElementById("color")
+        let d = document.getElementById("yourname");
+        let e = document.getElementById("loc");
+        let carts = document.getElementById("ccc");
+        let side = document.getElementById("nnn")
+        let sidenav = document.getElementById("n2");
+        let hhh = document.getElementById("kj");
+        
+
+        function cat(){
+            var child = document.createElement("div");
+            child.classList.add("chico")
+            if (a.value!="" & c.value!="" ){
+                 child.innerHTML = `SHOE NAME : ${a.value}<br> SHOE COLOUR : ${c.value} <hr> <button onclick='del(event)' id='dd'>Remove</button>`
+                 b.append(child)
+                 a.value="";
+                 c.value="";
+                 d.value="";
+                 e.value="";
+            
+            }
+            else{
+                window.alert("Please Enter All the Values")
+
+            }
+
+
+           
+        }
+
+        function dis(){
+            if (b.style.display=="block"){
+                b.style.display="none";
+            }
+            else{
+                b.style.display="block";
+            }
+        }
+        carting.addEventListener("click",cat);
+        carts.addEventListener("click",dis)
+
+        function del(event){
+            event.target.parentElement.remove();
+        }
+
+        function show(){
+          sidenav.style.display="block";
+        }
+ 
+
+        side.addEventListener("click",show)
+        hhh.addEventListener("click", jjj)
+
+        function jjj() {
+            let div4 = document.createElement("div")
+            div.innerHTML =`<h3> Your Items will be delivered Soon ....</h3>`
+        }
+    </script>
+</body>
+</html>
